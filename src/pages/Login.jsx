@@ -2,7 +2,7 @@ import React from "react";
 import { useSignInWithGoogle, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth, provider } from "../firebase";
 import { useNavigate } from "react-router-dom";
-import { Button, Input } from "@/components/ui";
+import { Button, Input } from "@/components/ui/button";
 
 const Login = () => {
   const [signInWithGoogle] = useSignInWithGoogle(auth);

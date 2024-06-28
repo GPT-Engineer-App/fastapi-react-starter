@@ -2,7 +2,7 @@ import React from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
-import { Button, Input } from "@/components/ui";
+import { Button, Input } from "@/components/ui/button";
 
 const Profile = () => {
   const [user, loading, error] = useAuthState(auth);

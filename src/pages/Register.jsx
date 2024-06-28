@@ -2,7 +2,7 @@ import React from "react";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
-import { Button, Input } from "@/components/ui";
+import { Button, Input } from "@/components/ui/button";
 
 const Register = () => {
   const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
