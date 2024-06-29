@@ -1,9 +1,21 @@
-// Update this page (the content is just a fallback if you fail and example)
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Index = () => {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const userHasSubscription = false; // Replace with actual subscription check
+
+    if (userHasSubscription) {
+      navigate('/configuration');
+    } else {
+      navigate('/subscription');
+    }
+  }, [navigate]);
+
   return (
     <div className="h-screen w-screen flex items-center justify-center">
-      {/* Update with components here - default to put new layout sections as separate components in the components folder, and import them here */}
       <div>
         <h1 className="text-3xl text-center">Your Blank Canvas</h1>
         <p className="text-center">
